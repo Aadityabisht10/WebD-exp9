@@ -1,0 +1,22 @@
+### Register User
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "Aaditya",
+    "email": "aadi@gmail.com",
+    "password": "123456"
+}
+
+### Login User
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "aadi@gmail.com",
+    "password": "123456"
+}
+
+### Access Protected Profile
+GET http://localhost:3000/profile
+Authorization: Bearer YOUR_TOKEN
